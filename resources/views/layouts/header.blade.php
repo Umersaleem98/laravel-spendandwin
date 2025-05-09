@@ -54,7 +54,7 @@
                         <a href="{{ url('/contact')}}" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary py-2 px-3">Get A Quote</a>
+                        <a href="{{ url('registers') }}" class="btn btn-primary py-2 px-3">Register Yourself</a>
                     </div>
                 </div>
             </nav>
