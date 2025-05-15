@@ -23,4 +23,5 @@ class AdminParticipantController extends Controller
 
         return back()->with('success', 'the user is delete successfully');
     }
+
 }

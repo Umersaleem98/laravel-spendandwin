@@ -10,7 +10,8 @@
 
 @include('layouts.header')
 
-@include('layouts.slider')
+{{-- @include('layouts.slider') --}}
+@include('layouts.about')
 
 
 
