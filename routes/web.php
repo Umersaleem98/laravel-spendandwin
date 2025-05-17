@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\AdminController;  // Ensure this import is present
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminParticipantController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\WinnerController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;  // Ensure this import is present
+
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -21,8 +23,8 @@ Route::get('dashboard', [AdminController::class, 'index']);
 Route::get('register.users', [AdminParticipantController::class, 'index']);
 Route::get('delete.participant/{id}', [AdminParticipantController::class, 'Delete']);
 
-
-
-
 Route::get('admin=announce-winner', [AdminController::class, 'announceWinner']);
+
+Route::get('winners.users', [WinnerController::class, 'index']);
+
 

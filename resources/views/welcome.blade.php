@@ -8,20 +8,19 @@
     </div>
     <!-- Spinner End -->
 
-@include('layouts.header')
+    @include('layouts.header')
 
-{{-- @include('layouts.slider') --}}
-@include('layouts.about')
+    {{-- @include('layouts.slider') --}}
+    @include('layouts.about')
 
 
 
 
     @include('layouts.footer')
 
-   
+
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-@include('layouts.script')
+    @include('layouts.script')
