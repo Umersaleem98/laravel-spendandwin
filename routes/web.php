@@ -12,6 +12,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 
 
+// auth controller 
+
+Route::get('/register', [AuthController::class, 'showRegisterForm']);
+Route::post('auth.register', [AuthController::class, 'register']);
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('auth.login', [AuthController::class, 'login']);
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Example protected route
+Route::get('/dashboard', function () {
+    return 'Welcome to Dashboard!';
+})->middleware('auth');
+
+
+// applicant regiterr 
 Route::get('registers', [AuthController::class, 'index']);
 Route::post('submit.register', [AuthController::class, 'create']);
 
