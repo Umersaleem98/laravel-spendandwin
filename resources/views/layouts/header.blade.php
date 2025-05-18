@@ -42,10 +42,10 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin Autg</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin Auth</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
                                 <a href="{{ url('/login') }}" class="dropdown-item">Login</a>
-                                <a href="{{ url('register') }}" class="dropdown-item">Register</a>
+                                {{-- <a href="{{ url('register') }}" class="dropdown-item">Register</a> --}}
                             </div>
                         </div>
                         <a href="{{ url('/contact')}}" class="nav-item nav-link">Contact</a>

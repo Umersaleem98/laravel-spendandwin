@@ -43,5 +43,6 @@ Route::get('delete.participant/{id}', [AdminParticipantController::class, 'Delet
 Route::get('admin=announce-winner', [AdminController::class, 'announceWinner']);
 
 Route::get('winners.users', [WinnerController::class, 'index']);
+Route::get('delete.winner.participant/{id}', [WinnerController::class, 'Delete']);
 
 

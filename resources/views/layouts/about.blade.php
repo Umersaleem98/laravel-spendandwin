@@ -36,25 +36,29 @@
                     </div>
                 </div>
             </div>
+<!-- Lucky Draw Card 3 (Upcoming Example) -->
+<div class="col-md-4">
+    <div class="card shadow-sm h-100">
+        <div class="card-body">
+            <h5 class="card-title">Draw #1235</h5>
 
-            <!-- Lucky Draw Card 3 (Upcoming Example) -->
-            <div class="col-md-4">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Draw #1235</h5>
+            @if ($winners->isNotEmpty())
+                @foreach ($winners as $index => $items)
+                    @php
+                        $positions = ['1st Winner', '2nd Winner', '3rd Winner'];
+                    @endphp
+                    @if ($index < 3)
+                        <span class="badge bg-success">{{ $positions[$index] }}: {{ $items->name }}</span><br>
+                    @endif
+                @endforeach
+            @else
+                <p class="card-text">New lucky draw coming soon. Stay tuned for more updates!</p>
+                <span class="badge bg-warning text-dark">Upcoming</span>
+            @endif
 
-                        @if ($winners->isNotEmpty())
-                            @foreach ($winners as $items)
-                                <span class="badge bg-success">The Winner is {{ $items->name }}</span>
-                            @endforeach
-                        @else
-                            <p class="card-text">New lucky draw coming soon. Stay tuned for more updates!</p>
-                            <span class="badge bg-warning text-dark">Upcoming</span>
-                        @endif
-
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
+</div>
 
         </div>
     </div>

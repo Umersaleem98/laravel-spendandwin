@@ -14,7 +14,7 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Register Participants</li>
+          <li class="breadcrumb-item active">Winner Participants</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -25,7 +25,7 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Registered Participants</h5>
+              <h5 class="card-title">Winner Participants</h5>
 
               <table class="table table-bordered table-striped">
                 <thead class="table-dark">
@@ -43,7 +43,7 @@
                       <td>{{ $item->name }}</td>
                       <td>{{ $item->email }}</td>
                       <td>
-                        <a href="{{ url('delete.participant/' . $item->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this participant?')">Delete</a>
+                        <a href="{{ url('delete.winner.participant/' . $item->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this participant?')">Delete</a>
                       </td>
                       
 
