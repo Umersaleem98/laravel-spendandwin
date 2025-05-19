@@ -39,8 +39,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="{{ url('/about') }}" class="nav-item nav-link">About</a>
+                        {{-- <a href="service.html" class="nav-item nav-link">Services</a> --}}
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin Auth</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
@@ -48,7 +48,7 @@
                                 {{-- <a href="{{ url('register') }}" class="dropdown-item">Register</a> --}}
                             </div>
                         </div>
-                        <a href="{{ url('/contact')}}" class="nav-item nav-link">Contact</a>
+                        {{-- <a href="{{ url('/contact')}}" class="nav-item nav-link">Contact</a> --}}
                     </div>
                     <div class="ms-auto d-none d-lg-block">
                         <a href="{{ url('registers') }}" class="btn btn-primary py-2 px-3">Register Yourself as Participant</a>

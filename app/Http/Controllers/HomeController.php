@@ -14,6 +14,11 @@ class HomeController extends Controller
         return view('welcome', compact('winners'));
     }
    
+    public function About()
+    {
+        return view('pages.aboutus');
+    }
+   
     public function reg()
     {
         return view('pages.register');

@@ -57,7 +57,7 @@
             </div>
 
             <div class="text-center">
-                <a href="{{ url('register') }}">Don't have an account? Register</a>
+                {{-- <a href="{{ url('register') }}">Don't have an account? Register</a> --}}
             </div>
         </form>
     </div>
